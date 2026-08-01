@@ -1,7 +1,26 @@
 aid: peddlr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/peddlr.png
 name: Peddlr
-description: Peddlr is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Peddlr is a Philippine fintech startup offering free mobile point-of-sale
+  (POS) and bookkeeping software for Filipino micro, small, and medium businesses (MSMEs).
+  Its app spans sales recording, offline inventory management, expense tracking, cash
+  and credit ledgers, bills payment, QRPH, e-loading and gaming pins, a payment ledger,
+  and accounting reports, with over two million downloads across 1,400+ cities and
+  municipalities. Peddlr is registered with the Bangko Sentral ng Pilipinas as an
+  Operator of Payment Systems. The company publishes no public developer program or
+  API at this time; this profile captures its identity, published web properties, and
+  domain-security posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/peddlr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Point of Sale
+- Payments
+- Small Business
+- Philippines
+- Bookkeeping
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/peddlr-domain-security.yml
 - type: Website
   url: https://peddlr.io
+- type: Blog
+  url: https://peddlr.io/blog
+- type: HelpCenter
+  url: https://learn.peddlr.io
+- type: PrivacyPolicy
+  url: https://peddlr.io/peddlr-privacy-policy
+- type: TermsOfService
+  url: https://peddlr.io/terms-conditions
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  pass: local-v1
+  artifacts_added: 1
